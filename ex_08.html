@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var site=prompt("좋아하는 사이트","");
+      var url;
+      switch(site){
+        case "구글": url="https://www.google.com";
+        break;
+        case "네이버": url="https://www.navercom";
+        break;
+        default: alert("없는 사이트에요");
+      }
+      if(url)location.href="http://"+url;
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var fir=prompt("1분기 판매량","0");
+      var sec=prompt("2분기 판매량","0");
+      if(sec>=fir){
+        document.write("판매량 괜춘");
+      }
+      else{
+        document.write("분발필요");
+      }
+      var thi=prompt("3분기 판매량","0");
+      if(thi>=sec){
+        document.write("판매량 괜춘");
+      }
+      else{
+        document.write("분발필요");
+      }
+      var fou=prompt("4분기 판매량","0");
+      if(fou>=thi){
+        document.write("판매량 괜춘");
+      }
+      else{
+        document.write("분발필요");
+      }
+      var str="<table border='1'>";
+      str+="<tr>";
+      str+="<td>Number(fir)</td><td>Number(sec)</td><td>Number(thi)</td><td>Number(fou)</td>"
+      str+="</tr>";
+      str+="</table>";
+      document.write(str);
+
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

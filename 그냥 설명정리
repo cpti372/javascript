@@ -1,0 +1,47 @@
+-Document:문서를 객체로 간주
+js불러오기: script="js파일 경로"
+객체 대소문자 고려해서 작성
+ex:) new Date()
+
+-변수 선언 방법
+1)문자열: 이건 내가 아는거고
+2)숫자형
+  var s=100;-> 이건 문자형
+  var t=Number("500");-> 문자형 데이터를 숫자형으로 사용 가능
+3)논리형
+  var m=Boolean(0)->false
+  var k=Boolean(연수)->true
+
+  -출력 방식
+  document.write(a,"<br>")
+4)주의점
+예약어 사용하면 안됨
+대소문자는 구분 하자
+
+-연산자
+1) 문자 결합 연산자
+
+-continue문
+
+1.for문에서 continue문 실행하면
+그냥 뒤에꺼 무시하고 바로 증감식
+
+-객체
+메소드-> 기능이라 생각하자
+
+1)내장 객체
+-get:정보를 가져온다
+-set:정보를 수정한다
+
+2)브라우저 객체 모델
+-window
+-screen
+-location
+-history
+-navigator
+자바스크립트를 이용해 다른 사이트 이동시
+window.location.href="사이트url"
+location(객체)
+
+3)문서 객체 모델
+html문서 구조

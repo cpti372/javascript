@@ -1,0 +1,21 @@
+<!--내장객체-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var tv=new Object();
+      tv.color="white";
+      tv.price=30000;
+      tv.info=function(){
+        document.write("tv색깔"+this.color,"<br>");
+        document.write("tv가격"+this.price,"<br>");
+      }
+      document.write("<h1>tv객체메소드호출</h1>");
+      tv.info();
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
