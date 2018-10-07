@@ -3,6 +3,9 @@ js불러오기: script="js파일 경로"
 객체 대소문자 고려해서 작성
 ex:) new Date()
 
+-사진 삽입 방법
+  document.write("<img src=\"math_img_"+com+".jpg\">");
+
 -변수 선언 방법
 1)문자열: 이건 내가 아는거고
 2)숫자형
@@ -32,15 +35,37 @@ ex:) new Date()
 1)내장 객체
 -get:정보를 가져온다
 -set:정보를 수정한다
+-배열 객체
+ex:) var d=new Array()
+    d[0]=1
+    d[1]=2
+    d[3]=3
+
+ex:) var d=new Array(30,"ek",true)
+
+ex:) var d=[30,"따르릉",true]
+
+concat()//배열의 객체
 
 2)브라우저 객체 모델
 -window
+1.url 열기: open("url","새창이름","새창옵션(width,height,left,right,top,scollbars)")
+2.경고창: alert()
+3.응답형:prompt("","답변칸 공백으로 주로 나둠")
+4.confirm("질문 내용")->확인 및 취소 창
+5.moveTo(x,y)->위치 이동
+6.resizeTo(width,height)->새 창 크기 변경
+7.setinterval(function())->지속적으로 일정한 시간 간격으로 함수 호출해 코드 실행//간격있음
+8.settimeout(funtion())->단한번//일정한 시간 후에 코드 실행 후 종료
+
 -screen
 -location
 -history
 -navigator
 자바스크립트를 이용해 다른 사이트 이동시
 window.location.href="사이트url"
+console-> var str=3434
+          console.log(str)
 location(객체)
 
 3)문서 객체 모델
