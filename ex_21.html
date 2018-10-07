@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var email=prompt("이메일 주소 뭐임?");
+      var arrurl=[".co.kr",".com",".net",".or.kr",".go.kr"];
+      var check1=false;
+      var check2=false;
+
+      if(email.indexOf('@')>0){
+        check1=true;
+      }
+      for(var i=0;i<arrurl.length;i++){
+        if(email.indexOf(arrurl[i])>0){
+          check2=true;
+        }
+      }
+      if(check1 && check2){
+        document.write(email);
+      }else{
+        alert('잘못된 이메일');
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

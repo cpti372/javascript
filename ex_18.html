@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var green=["교대","역삼","강남"];
+      var red=["미금","정자","수서"];
+      red.reverse();
+      console.log(red);
+      result2=green.concat(red);//2개의 베열 객체를 하나로 결합
+      console.log(result2);
+      green.splice(2,1,"서초","역삼");//2번 인덱스부터 1개의 데이터를 삭제
+      console.log(green);// 교대 역삼 강남 서초 역삼
+
+      var data1=red.pop();//배열의 마지막 인덱스를 저장
+      var data2=red.shift();//배열의 가장 첫 인덱스를 저장
+
+      red.push(data1);//배열에 넣는데
+      console.log(red);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
