@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function TestScore(name,kor,eng) {
+        this.name=name;
+        this.kor=kor;
+        this.eng=eng;
+
+        this.getInfo=function(){
+          document.write(name,"<br>");
+          document.write(kor,"<br>");
+          document.write(eng,"<br>");
+        }
+        this.getAvg=function(){
+          return (this.kor+this.eng)/2;
+        }
+      }
+
+      var kimgun=new TestScore("김군",80,20);
+      var ye=new TestScore("신군",100,100);
+      kimgun.getInfo();
+      document.write(kimgun.getAvg());
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
