@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Test(name,kor,eng){
+            this.userName=name;
+            this.korNum=kor;
+            this.EngNum=eng;
+        }
+        Test.prototype.getInfo=function(){
+                document.write("이름:"+this.userName,"<br>");
+                document.write("국어:"+this.korNum,"<br>");
+                document.write("영어:"+this.EngNum,"<br>");
+        }
+        Test.prototype.getAvg=function(){
+                document.write((this.EngNum+this.korNum)/2);
+        }
+        var kimgun=new Test("kim",78,90);
+        var ohgun=new Test("oh",100,20);
+        console.log(kimgun);
+        console.log(ohgun);
+        document.write(kimgun.getInfo());
+        document.write(kimgun.getAvg(),"<br>");
+        document.write(ohgun.getInfo());
+        document.write(ohgun.getAvg());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
